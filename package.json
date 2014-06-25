@@ -1,0 +1,14 @@
+{
+  "name": "Caret",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-compress": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thomaswilburn/Caret.git"
+  }
+}

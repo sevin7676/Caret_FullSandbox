@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+    height: 100%;
+    background: @background;
+    color: @foreground;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Segoe UI", //windows
+    "Lucida Sans", //os x
+    "Droid Sans", //ubuntu?
+    "Liberation Sans", //other linux?
+    sans-serif; //fallback
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+a[target] {
+  color: @foreground;
+}
+
+:focus {
+  outline: @accent auto 5px;
+}
+
+//MACRO-LEVEL POSITIONING
+
+.titlebar {
+  flex: 0 0 30px;
+  z-index: 999;
+}
+
+.tabs {
+  flex: 0 0 32px;
+}
+
+.central {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.editing {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  align-content: stretch;
+  flex-direction: column;
+}
+
+#editor {
+  flex-grow: 1;
+  padding-top: 2px;
+  z-index: 9;
+}
+
+.bottom-bar {
+  flex: 0 0 auto;
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, .1);
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+//immersive mode
+
+.immersive {
+  .titlebar, .bottom-bar {
+    display: none;
+  }
+  
+  .central {
+    margin-top: 5px;
+  }
+  
+  .tabs {
+    height: 6px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+    align-items: stretch;
+    align-content: stretch;
+    z-index: 999;
+    
+    .tab {
+      overflow: hidden;
+    }
+    
+    &:hover {
+      height: 34px;
+    }
+  }
+}

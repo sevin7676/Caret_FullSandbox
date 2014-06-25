@@ -1,0 +1,48 @@
+{
+  //basic navigation/application keys
+  "Ctrl-O": "session:open-file",
+  "Ctrl-W": "session:close-tab",
+  "Ctrl-S": "session:save-file",
+  "Ctrl-Shift-S": "session:save-file-as",
+  "Ctrl-N": "session:new-file",
+  "Ctrl-Tab": "session:change-tab",
+  "Ctrl-Shift-Tab": { "command": "session:change-tab", "argument": -1 },
+  "Ctrl-Z": {"command": "ace:command", "argument": "undo" },
+  "Ctrl-Shift-Z": { "command": "ace:command", "argument": "redo" },
+  
+  //Chromebook fixes
+  "Ctrl-Up": { "ace": "addCursorAbove" },
+  "Ctrl-Down": { "ace": "addCursorBelow" },
+  "Ctrl-Home": { "ace": "gotostart" },
+  "Ctrl-End": { "ace": "gotoend" },
+  "Ctrl-PageUp": { "ace": "gotostart" },
+  "Ctrl-PageDown": { "ace": "gotoend" },
+  "Alt-PageDown": { "ace": "gotopagedown" },
+  "PageDown": { "ace": "gotopagedown" },
+  "Alt-PageUp": { "ace": "gotopageup" },
+  "PageUp": {"ace": "gotopageup" },
+  "Alt-Home": { "ace": "gotolinestart" },
+  "Home": { "ace": "gotolinestart" },
+  "Alt-End": { "ace": "gotolineend" },
+  "End": { "ace": "gotolineend" },
+  "Ctrl-Space": { "ace": "startAutocomplete" },
+  
+  //Sublime compatibility
+  "Ctrl-L": "sublime:expand-to-line",
+  "Alt-Q": "sublime:wrap",
+  "Ctrl-D": { "ace": "selectMoreAfter" },
+  "Ctrl-P": { "command": "palette:open" },
+  "Ctrl-Shift-P": { "command": "palette:open", "argument": "command" },
+  "Ctrl-R": { "command": "palette:open", "argument": "reference" },
+  "Ctrl-G": { "command": "palette:open", "argument": "line" },
+  "Ctrl-M": { "ace": "jumptomatching" },
+  "Ctrl-Shift-M": { "command": "sublime:expand-to-matching" },
+  "Ctrl-Q": { "command": "ace:togglemacro" },
+  "Ctrl-Shift-Q": { "ace": "replaymacro" },
+  "Ctrl--": { "command": "editor:adjust-zoom", "argument": -1 },
+  "Ctrl-=": { "command": "editor:adjust-zoom", "argument": 1 },
+  "Ctrl-0": { "command": "editor:default-zoom" },
+  
+  //dev mode
+  "Ctrl-.": { "command": "app:show-prompt" }
+}

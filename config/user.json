@@ -1,0 +1,79 @@
+{
+  //If you want to disable update checks at startup, change this
+  "promptForUpdates": true,
+
+  "defaultTheme": "chrome", //This should be any of the supported Ace themes
+  /*
+  Ace theme names are usually underscored, lowercase versions of the "friendly" names:
+    ambiance
+    chaos
+    chrome
+    clouds
+    clouds_midnight
+    cobalt
+    crimson_editor
+    dawn
+    dreamweaver
+    eclipse
+    github
+    idle_fingers
+    katzenmilch
+    kuroir
+    merbivore
+    merbivore_soft
+    monokai
+    mono_industrial
+    pastel_on_dark
+    solarized_dark
+    solarized_light
+    son_of_obsidian
+    terminal
+    textmate
+    tomorrow
+    tomorrow_night
+    tomorrow_night_blue
+    tomorrow_night_bright
+    tomorrow_night_eighties
+    twilight
+    vibrant_ink
+    xcode
+  */
+  "uiTheme": "light", //dark or light, your pick
+  "autoHideProject": false, //collapse the project view until you hover
+  "immersiveFullscreen": false, //hides menus/tabs in Chrome OS fullscreen mode
+  "highlightLine": false,
+  "hideGutter": false, //set to true to hide the line numbering
+
+  "showWhitespace": false, //show whitespace characters (spaces, tabs, returns)
+  "indentation": 2, //indentation size
+  "useTabs": false, //will turn off Ace's setUseSoftTabs() option and use tab characters instead
+  "wordWrap": true,
+  "wrapLimit": false, //Set to the number of characters you want or false for full window
+  "showMargin": false,
+  "lineEndings": "auto", //newline format - "windows", "unix", or "auto"
+  "scrollPastEnd": true, //allow the editor to scroll past the end of the document
+  "trimTrailingWhitespace": true, //run "Trim Trailing Whitespace" on save
+  "trimEmptyLines": false, //should the trim whitespace command also truncate empty lines?
+
+  //only fixed-width fonts supported, for now
+  "fontFamily": "",
+  "fontSize": 13,
+
+  //Web workers are used for code hinting in PHP, JavaScript, and JSON.
+  //We don't yet have a way to set the worker options, but you can disable it.
+  "useWorker": true,
+  //autocomplete triggers on Ctrl-Space
+  "autocomplete": true,
+
+  //By default, the palette searches the current file's text only unless you widen the scope.
+  //If you'd like it to search all open files by default, set this option to true.
+  "searchAllFiles": false,
+  //set a regex to ignore in project view/search
+  "ignoreFiles": "node_modules",
+
+  //Crazy? You might like Vim keybindings.
+  "emulateVim": false,
+
+  //Whether to show the "New file" tab button on the tab bar;
+  "showNewTabButton": false
+}
