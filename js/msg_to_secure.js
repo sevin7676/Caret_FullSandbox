@@ -144,12 +144,6 @@ var MSG = {
 }
 
 
-//emulate chrome APIs
-
-chrome['runtime'] = {};
-
-
-
 /**
 * https://developer.chrome.com/extensions/runtime#method-getPackageDirectoryEntry
 */
